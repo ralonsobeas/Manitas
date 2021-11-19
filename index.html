@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Juego Manitas</title>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+
+    <script src="script.js"></script>
+  </head>
+  <body>
+    <h2 style="background:blue;color:white;text-align:center">Juego de encontrar la llave</h2>
+
+    <div class="" style="display:flex">
+      <div class="">
+        <img class="manoCerrada" id="closed1" src="assets_examen_1/closed1.png" alt="" width="200px" height="200px">
+        <img id="key1" src="assets_examen_1/key.jpg" alt="" hidden="true" width="200px" height="200px">
+        <img id="left" src="assets_examen_1/left.png" alt="" hidden="true" width="200px" height="200px">
+      </div>
+      <div class="">
+        <img class="manoCerrada" id="closed2" src="assets_examen_1/closed2.png" alt="" width="200px" height="200px">
+        <img id="key2" src="assets_examen_1/key.jpg" alt="" hidden="true" width="200px" height="200px">
+        <img id="right" src="assets_examen_1/right.png" alt="" hidden="true" width="200px" height="200px">
+      </div>
+    </div>
+
+    <div class="" style="display:flex">
+      <div class="">
+        <p style="background:orange;margin-right: 20px" id="puntosJugador">Puntos deljugador: 0</p>
+      </div>
+      <div class="">
+        <p style="background:orange" id="puntosMaquina">Puntos de la máquina: 0</p>
+      </div>
+    </div>
+    <div class="" style="display:flex">
+      <div class="">
+        <button id="btnReiniciar" type="button" name="button" style="border-radius: 10px;">Reiniciar contadores</button>
+      </div>
+      <div class="">
+        <button id="btnPista" type="button" name="button" style="border-radius:10px;">Pista</button>
+      </div>
+    </div>
+  </body>
+</html>
