@@ -5,39 +5,39 @@
     <title>Juego Manitas</title>
 
     <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
-
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css">
     <script src="script.js"></script>
   </head>
   <body>
-    <h2 style="background:blue;color:white;text-align:center">Juego de encontrar la llave</h2>
+    <h2 class="text-center">Juego de encontrar la llave</h2>
 
-    <div class="" style="display:flex">
-      <div class="">
-        <img class="manoCerrada" id="closed1" src="assets_examen_1/closed1.png" alt="" width="200px" height="200px">
-        <img id="key1" src="assets_examen_1/key.jpg" alt="" hidden="true" width="200px" height="200px">
-        <img id="left" src="assets_examen_1/left.png" alt="" hidden="true" width="200px" height="200px">
+    <div class="row" >
+      <div class="col text-center">
+        <img class="manoCerrada img-fluid" id="closed1" src="assets_examen_1/closed1.png" alt="" width="200px" height="200px">
+        <img class="img-fluid" id="key1" src="assets_examen_1/key.jpg" alt="" width="200px" height="200px" style="display:none">
+        <img class="img-fluid" id="left" src="assets_examen_1/left.png" alt="" width="200px" height="200px" style="display:none">
       </div>
-      <div class="">
-        <img class="manoCerrada" id="closed2" src="assets_examen_1/closed2.png" alt="" width="200px" height="200px">
-        <img id="key2" src="assets_examen_1/key.jpg" alt="" hidden="true" width="200px" height="200px">
-        <img id="right" src="assets_examen_1/right.png" alt="" hidden="true" width="200px" height="200px">
+      <div class="col text-center">
+        <img class="manoCerrada img-fluid" id="closed2" src="assets_examen_1/closed2.png" alt="" width="200px" height="200px">
+        <img class="img-fluid" id="key2" src="assets_examen_1/key.jpg" alt="" width="200px" height="200px" style="display:none">
+        <img class="img-fluid" id="right" src="assets_examen_1/right.png" alt="" width="200px" height="200px" style="display:none">
       </div>
     </div>
 
-    <div class="" style="display:flex">
-      <div class="">
+    <div class="row flex-nowrap" style="display:flex">
+      <div class="col text-center">
         <p style="background:orange;margin-right: 20px" id="puntosJugador">Puntos deljugador: 0</p>
       </div>
-      <div class="">
+      <div class="col text-center">
         <p style="background:orange" id="puntosMaquina">Puntos de la máquina: 0</p>
       </div>
     </div>
-    <div class="" style="display:flex">
-      <div class="">
-        <button id="btnReiniciar" type="button" name="button" style="border-radius: 10px;">Reiniciar contadores</button>
+    <div class="display:flex">
+      <div class="mt-1 text-center">
+        <button class="btn btn-primary" id="btnReiniciar" type="button" name="button" style="border-radius: 10px;">Reiniciar contadores</button>
       </div>
-      <div class="">
-        <button id="btnPista" type="button" name="button" style="border-radius:10px;">Pista</button>
+      <div class="mt-1 text-center">
+        <button class="btn btn-primary" id="btnPista" type="button" name="button" style="border-radius:10px;">Pista</button>
       </div>
     </div>
   </body>
